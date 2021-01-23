@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@600&family=Poppins:wght@300;400;500;700&display=swap');
+
+/**** Styles ****/
+:root {
+  --color-default: #4e5150;
+  --color-primary: #4f4f4f;
+  --color-dark: #333;
+  --color-muted: #828282;
+  --color-footer: #a9a9a9;
+  --color-orange: #f2994a;
+
+  --bg-default: var(--color-orange);
+  --bg-secondary: #e0e0e0;
+  --bg-white: #f2f2f2;
+
+  --font-default: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-default);
+  color: var(--color-default);
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+input[type="checkbox"] {
+  border: 1px solid var(--color-muted);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+small {
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 5px;
+  transition: 300ms all ease;
+}
+button {
+  background: var(--bg-default);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 45px;
+}
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+  filter: brightness(0.9);
+}
+.hidden {
+  display: none;
+}
+
+/**** Container ****/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5vh 15vw;
+}
+
+@media (max-width: 1024px) {
+  /**** Container ****/
+  .container {
+    padding: 5vh 2.5vw;
+  }
+}

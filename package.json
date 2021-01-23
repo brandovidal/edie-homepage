@@ -1,0 +1,15 @@
+{
+  "name": "edie-homepage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Brando vidal",
+  "private": false,
+  "scripts": {
+    "dev": "yarn start",
+    "start": "servor src index.html 5500 --reload --browse --static"
+  },
+  "devDependencies": {
+    "servor": "^4.0.2"
+  }
+}
