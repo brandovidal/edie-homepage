@@ -79,6 +79,11 @@ button:focus {
   outline: none;
   filter: brightness(0.9);
 }
+button.btn-muted {
+  background: var(--bg-secondary);
+  color: var(--color-muted);
+  padding: 9px 12px;
+}
 .hidden {
   display: none;
 }
@@ -150,18 +155,20 @@ button:focus {
 /**** Main ****/
 .container main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 main .home {
   margin: 0 0 15vh 0;
 }
-main .home .info {
+main .home .info,
+main .services {
   margin: 0 10vw;
 }
 main .home .message {
   max-width: 370px;
 }
-main .home .title {
+main .title {
   font-family: var(--font-default);
   font-style: normal;
   font-weight: 500;
@@ -170,18 +177,18 @@ main .home .title {
   color: var(--color-dark);
   margin-bottom: 42px;
 }
-main .home .subtitle,
-main .home .subtitle {
+.home .subtitle,
+.home p {
   font-family: var(--font-default);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
 }
-main .home .subtitle {
+.home .subtitle {
   margin-bottom: 16px;
 }
-main .home p {
+.home p {
   font-weight: normal;
   color: var(--color-default);
   margin-bottom: 42px;
@@ -227,6 +234,34 @@ main .home p {
 }
 .contact .form-group .input-group input::placeholder {
   color: var(--color-gray);
+}
+
+/**** Cards ****/
+.cards-container {
+  margin: 100px 0;
+}
+.card {
+  display: block;
+}
+.card .title {
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+.card .content {
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.card img {
+  width: 67px;
+  height: 67px;
 }
 
 /**** Footer ****/
@@ -346,12 +381,13 @@ main .home p {
     margin-top: 15px;
     max-width: 100%;
   }
-  main .home .title {
+  main .title {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 15px;
   }
-  main .home .subtitle {
+  .home .subtitle,
+  .home p {
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 0;
