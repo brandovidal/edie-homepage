@@ -18,7 +18,59 @@
   </head>
   <body>
     <section class="container">
-      <h1 class="title">Edie</h1>
+      <nav class="nav">
+        <div class="logo"><a href="/">Edie</a></div>
+        <input type="checkbox" id="menu" class="hidden" />
+        <label for="menu" class="menu-icon">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+        <ul class="nav-items">
+          <li class="item active"><a href="/">Home</a></li>
+          <li class="item"><a href="#services">Services</a></li>
+          <li class="item"><a href="#works">Our Works</a></li>
+          <li class="item"><a href="#clients">Clients</a></li>
+          <li class="item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section class="home">
+          <header class="info">
+            <h5 class="subtitle txt-primary">Unhappy with your website?</h5>
+            <h2 class="title">We create beautiful and fast web services</h2>
+          </header>
+          <picture
+            ><img src="assets/img/heroImage.jpg" alt="reunion"
+          /></picture>
+          <article class="info message">
+            <h2 class="title">Story, emotion and purpose</h2>
+            <p class="">
+              We help transform your ideas into real world applications that
+              will outperform your toughest competition and help you achieve
+              your strategic goals in short period of time.
+            </p>
+          </article>
+          <article class="info contact">
+            <form>
+              <div class="form-group">
+                <label for="email">Want us to contact you?</label>
+                <div class="input-group">
+                  <input
+                    class="input-email"
+                    type="text"
+                    name="email"
+                    placeholder="Email"
+                    maxlength="30"
+                  />
+                  <button class="btn-input">Join</button>
+                </div>
+              </div>
+            </form>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">Brando Vidal @ DevChallenges.io</footer>
     </section>
     <script src="./index.js"></script>
   </body>
