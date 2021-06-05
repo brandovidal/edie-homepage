@@ -5,12 +5,12 @@
   --color-default: #4f4f4f;
   --color-primary: #2d9cdb;
   --color-secondary: #eb5757;
+  --color-success: #27ae60;
   --color-dark: #333;
   --color-muted: #828282;
   --color-footer: #a9a9a9;
   --color-gray: #bdbdbd;
 
-  --bg-default: var(--color-primary);
   --bg-secondary: #e0e0e0;
   --bg-white: #f2f2f2;
   --bg-dark: #100e1d;
@@ -66,7 +66,7 @@ small {
   transition: 300ms all ease;
 }
 button {
-  background: var(--bg-default);
+  background: var(--color-primary);
   color: white;
   border: none;
   border-radius: 12px;
@@ -84,9 +84,16 @@ button.btn-muted {
   color: var(--color-muted);
   padding: 9px 12px;
 }
+button.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  padding: 9px 12px;
+}
 .hidden {
   display: none;
 }
+
+/**** Text ****/
 .txt-primary {
   color: var(--color-primary);
 }
@@ -95,6 +102,17 @@ button.btn-muted {
 }
 .txt-dark {
   color: var(--color-dark);
+}
+
+/**** Background ****/
+.bg-primary {
+  background: var(--color-primary);
+}
+.bg-secondary {
+  background: var(--color-secondary);
+}
+.bg-success {
+  background: var(--color-success);
 }
 
 /**** Container ****/
@@ -161,14 +179,13 @@ button.btn-muted {
 main .home {
   margin: 0 0 15vh 0;
 }
-main .home .info,
-main .services {
-  margin: 0 10vw;
+main .home > .info {
+  margin: 0 14vw;
 }
-main .home .message {
+main .home > .message {
   max-width: 370px;
 }
-main .title {
+main .home .title {
   font-family: var(--font-default);
   font-style: normal;
   font-weight: 500;
@@ -177,18 +194,21 @@ main .title {
   color: var(--color-dark);
   margin-bottom: 42px;
 }
-.home .subtitle,
-.home p {
+main .home .home-title {
+  max-width: 543px;
+}
+main .home .subtitle,
+main .home p {
   font-family: var(--font-default);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
 }
-.home .subtitle {
+main .home .subtitle {
   margin-bottom: 16px;
 }
-.home p {
+main .home p {
   font-weight: normal;
   color: var(--color-default);
   margin-bottom: 42px;
@@ -236,12 +256,54 @@ main .title {
   color: var(--color-gray);
 }
 
+/**** Services ****/
+main .services {
+  margin: 0 6vw;
+  transition: all 300ms;
+}
+main .services > .title {
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--color-dark);
+  margin-bottom: 42px;
+}
+main .services > .page-title {
+  max-width: 346px;
+}
+
 /**** Cards ****/
 .cards-container {
-  margin: 100px 0;
+  display: flex;
+  flex-direction: row;
 }
 .card {
   display: block;
+  margin-bottom: 100px;
+  padding: 45px 34px;
+  border: none;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.card:hover {
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  border-radius: 24px;
+}
+.card picture {
+  display: flex;
+  width: 67px;
+  height: 67px;
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 35px;
+}
+.card img {
+  margin: auto;
+  width: 27px;
+  height: 27px;
 }
 .card .title {
   font-family: var(--font-default);
@@ -249,6 +311,7 @@ main .title {
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
+  color: var(--color-dark);
   margin-bottom: 30px;
 }
 .card .content {
@@ -259,9 +322,28 @@ main .title {
   line-height: 24px;
   margin-bottom: 24px;
 }
-.card img {
-  width: 67px;
-  height: 67px;
+
+/**** Works ****/
+main .works {
+  margin: 0 6vw;
+  transition: all 300ms;
+}
+main .works > .title {
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--color-dark);
+  margin-bottom: 48px;
+}
+main .works > .page-title {
+  max-width: 346px;
+}
+
+/**** Gallery ****/
+main .gallery {
+  display: grid;
 }
 
 /**** Footer ****/
@@ -371,26 +453,53 @@ main .title {
 /**** Container && Home ****/
 @media (max-width: 768px) {
   .container {
-    padding: 2.5vh 3.5vw;
+    padding: 2.5vh 4.7vw;
   }
   main {
     display: flex;
     flex-direction: column;
   }
-  main .home .message {
+  main .home > .info {
+    margin: 0 10vw;
+  }
+  main .home > .message {
     margin-top: 15px;
     max-width: 100%;
   }
-  main .title {
+  main .home .title {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 15px;
   }
-  .home .subtitle,
-  .home p {
+  main .home .subtitle,
+  main .home p {
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 0;
+  }
+}
+/**** Services ****/
+@media only screen and (max-width: 768px) {
+  main .services {
+    margin: 0;
+  }
+  main .services > .title {
+    font-family: var(--font-default);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-dark);
+    margin: 0 8vw;
+    margin-bottom: 90px;
+  }
+}
+
+/**** Cards ****/
+@media only screen and (max-width: 768px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
   }
 }
 
