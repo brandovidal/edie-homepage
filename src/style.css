@@ -178,10 +178,12 @@ button.btn-primary {
   align-items: center;
 }
 main .home {
+  width: 100%;
+  max-width: 100%;
   margin: 0 0 190px 0;
 }
 main .home > .info {
-  margin: 0 14vw;
+  margin: 0 12vw;
 }
 main .home > .message {
   max-width: 370px;
@@ -256,7 +258,9 @@ main .home p {
 
 /**** Services ****/
 main .services {
-  margin: 0 2.5vw;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 6vw;
   transition: all 300ms;
 }
 main .services > .title {
@@ -320,7 +324,9 @@ main .services > .page-title {
 
 /**** Works ****/
 main .works {
-  margin: 0 6vw;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 6vw;
   transition: all 300ms;
 }
 main .works > .title {
@@ -395,10 +401,13 @@ main .gallery .item .subtitle {
 
 /**** Clients ****/
 main .clients {
+  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 6vw 195px 6vw;
+  padding: 0 6vw;
+  margin-bottom: 195px;
 }
 main .clients .info {
   max-width: 280px;
@@ -645,7 +654,7 @@ main .testimonial .info > .content .subtitle {
     margin: 0 0 100px 0;
   }
   main .home > .info {
-    margin: 0 6vw;
+    margin: 0 2vw;
   }
   main .home > .message {
     margin-top: 15px;
@@ -667,7 +676,7 @@ main .testimonial .info > .content .subtitle {
 /**** Services ****/
 @media only screen and (max-width: 768px) {
   main .services {
-    margin: 0;
+    padding: 0;
   }
   main .services > .title {
     font-style: normal;
@@ -675,7 +684,7 @@ main .testimonial .info > .content .subtitle {
     font-size: 24px;
     line-height: 36px;
     color: var(--color-dark);
-    margin: 0 8vw;
+    margin: 0 3vw;
     margin-bottom: 45px;
   }
 }
@@ -712,7 +721,7 @@ main .testimonial .info > .content .subtitle {
 /**** Works ****/
 @media only screen and (max-width: 768px) {
   main .works {
-    margin: 0;
+    padding: 0;
     width: 100%;
   }
   main .works > .title {
@@ -772,7 +781,8 @@ main .testimonial .info > .content .subtitle {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 0 100px 0;
+    padding: 0;
+    margin-bottom: 100px;
   }
   main .clients .info {
     margin: 0 0 36px 0;
