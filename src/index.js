@@ -1,9 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
-  //   welcome();
-  const btn = document.querySelector("button");
-  btn.addEventListener("click", welcome);
-});
+(function () {
+  document.addEventListener("DOMContentLoaded", () => getMenu());
+})();
 
-function welcome() {
-  alert("welcome");
+function getMenu() {
+  const nav = document.querySelector(".container .nav");
+  if (!nav) {
+    return;
+  }
+
+  const menu = nav.querySelector("#menu");
+  const navLinks = nav.querySelectorAll(".nav-items li > a");
+
+  // Change checked menu
+  menu &&
+    navLinks.length > 0 &&
+    navLinks.forEach((link) =>
+      link.addEventListener("click", () => (menu.checked = false))
+    );
 }
