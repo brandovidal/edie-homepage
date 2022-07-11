@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://naughty-doctor.surge.sh">
+    <a href="https://edie-homepage.pages.dev/">
       Demo
     </a>
     <span> | </span>
@@ -49,7 +49,7 @@ _Screenshot Mobile_
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
-  [Live demo](https://naughty-doctor.surge.sh)
+  [Live demo](https://edie-homepage.pages.dev/)
 
 - What was your experience?
   I feel gratifying to be able to solve this challenge.
