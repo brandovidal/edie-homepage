@@ -2,14 +2,22 @@
   "name": "edie-homepage",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "ISC",
   "author": "Brando vidal",
   "private": false,
+  "keywords": [
+    "devchallengues",
+    "homepage"
+  ],
   "scripts": {
-    "dev": "yarn start",
-    "start": "servor src index.html 5500 --reload --browse --static"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rimraf node_modules/ dist/"
   },
   "devDependencies": {
-    "servor": "^4.0.2"
+    "@types/node": "18.0.3",
+    "rimraf": "3.0.2",
+    "vite": "2.9.14"
   }
 }

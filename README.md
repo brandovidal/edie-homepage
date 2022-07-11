@@ -40,11 +40,11 @@
 
 _Screenshot Fullscreen_
 
-![Screenshot Fullscreen](src/assets/img/sc-desktop.jpg)
+![Screenshot Fullscreen](./desktop.jpg)
 
 _Screenshot Mobile_
 
-![Screenshot Mobile](src/assets/img/sc-mobile.jpg)
+![Screenshot Mobile](./mobile.jpg)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
@@ -63,9 +63,9 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [HTML5](https://html5.org/)
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
+- [Cloud Flare Pages](https://pages.cloudflare.com/)
 
 ## Features
 
@@ -75,23 +75,42 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## How To Use
 
-<!-- Example: -->
-
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
+### Clone this repository
+
 ```bash
-# Clone this repository
-$ git clone https://github.com/brandovidal/edie-homepage.git
+git clone https://github.com/brandovidal/edie-homepage
+```
 
-Or
+### Install dependencies
 
-$ git clone git@github.com:brandovidal/edie-homepage.git
+```bash
+npm run install
+```
 
-# Install dependencies
-$ yarn install
+### Run the app
 
-# Run the app
-$ yarn start
+```bash
+npm run dev
+```
+
+### Deploy app
+
+```bash
+npm run build
+```
+
+### Preview deploy
+
+```bash
+npm run preview
+```
+
+### Clean repository
+
+```bash
+npm run clean
 ```
 
 ## Acknowledgements
@@ -104,6 +123,5 @@ $ yarn start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@brandovidal](https://github.com/brandovidal)
+- Twitter [@brandovidal](https://twitter.com/_brandovidal)
